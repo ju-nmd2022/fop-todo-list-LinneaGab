@@ -77,3 +77,10 @@ h1 {
   font-style: italic;
   color: #fff;
 }
+
+.done {
+  color: lightgray;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: line-through;
+}
