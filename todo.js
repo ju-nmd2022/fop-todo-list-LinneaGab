@@ -37,3 +37,11 @@ class Task extends HTMLElement {
 //custom element
 customElements.define("task-item", Task);
 
+//adding tasks
+const INPUT = document.querySelector("#inputbox");
+document.querySelector("#add-button").addEventListener("click", () => {
+  if (INPUT.value === "") return;
+
+  new Task(INPUT.value);
+  INPUT.value = "";
+});
